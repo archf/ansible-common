@@ -36,7 +36,7 @@ Example Playbook
 - hosts: servers
   roles:
     - { role: archf.common }
-        ```
+```
 
 License
 -------
