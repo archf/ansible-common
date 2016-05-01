@@ -7,11 +7,11 @@ It ties together the roles below:
 
 ```yaml
 dependencies:
-  - common
   - accounts
-  - resolv
+  - packages
   - openssh-server
   - ntpd
+  - resolv
 ```
 
 Requirements
