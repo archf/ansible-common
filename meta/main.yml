@@ -29,4 +29,3 @@ dependencies:
   - packages
   - openssh-server
   - ntpd
-#   - resolv
