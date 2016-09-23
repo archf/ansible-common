@@ -1,9 +1,10 @@
 ---
 galaxy_info:
   author: Felix Archambault
-  description: meta role to perform basic configuration
+  description: A meta role to perform basic configuration.
   license: MIT
   min_ansible_version: 2.0
+
   platforms:
     - name: EL
       versions:
@@ -23,7 +24,7 @@ galaxy_info:
     - system
     - development
 
-# accounts should be first to configure mgmt account
+# accounts should be first to configure mgmt/admin accounts
 dependencies:
   - accounts
   - packages
