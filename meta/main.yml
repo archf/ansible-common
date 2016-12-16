@@ -3,7 +3,7 @@ galaxy_info:
   author: Felix Archambault
   description: A meta role to perform basic configuration.
   license: MIT
-  min_ansible_version: 2.0
+  min_ansible_version: 2.2
 
   platforms:
     - name: EL
@@ -16,6 +16,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
       - trusty
+      - xenial
     - name: Debian
       versions:
       - wheezy
@@ -24,9 +25,10 @@ galaxy_info:
     - system
     - development
 
-# accounts should be first to configure mgmt/admin accounts
 dependencies:
-  - accounts
   - packages
+  # putting openssh-server before accounts to make sure the synchronize
+  # module's tasks in the accounts role won't fail.
   - openssh-server
+  - accounts
   - ntpd
