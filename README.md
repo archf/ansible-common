@@ -6,7 +6,7 @@ A meta role to perform basic configuration.
 
 ### Ansible version
 
-Minimum required ansible version is 2.0.
+Minimum required ansible version is 2.2.
 
 ## Description
 
@@ -67,9 +67,9 @@ Basic usage is:
 
 ## Ansible role dependencies
 
-  * accounts
   * packages
   * openssh-server
+  * accounts
   * ntpd
 
 ## License
