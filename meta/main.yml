@@ -31,4 +31,4 @@ dependencies:
   # module's tasks in the accounts role won't fail.
   - openssh-server
   - accounts
-  - ntpd
+  # - ntpd
