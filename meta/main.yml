@@ -3,7 +3,7 @@ galaxy_info:
   author: Felix Archambault
   description: A meta role to perform basic configuration.
   license: MIT
-  min_ansible_version: 2.2
+  min_ansible_version: 2.5
 
   platforms:
     - name: EL
@@ -29,6 +29,6 @@ dependencies:
   - packages
   # putting openssh-server before accounts to make sure the synchronize
   # module's tasks in the accounts role won't fail.
-  - openssh-server
+  # - openssh-server
   - accounts
   # - ntpd
