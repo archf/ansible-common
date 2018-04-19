@@ -13,10 +13,16 @@ galaxy_info:
       versions:
       - 21
       - 22
+      - 23
+      - 24
+      - 25
+      - 26
     - name: Ubuntu
       versions:
       - trusty
       - xenial
+      - artful
+      - bionic
     - name: Debian
       versions:
       - wheezy
@@ -28,7 +34,6 @@ galaxy_info:
 dependencies:
   - packages
   # putting openssh-server before accounts to make sure the synchronize
-  # module's tasks in the accounts role won't fail.
-  # - openssh-server
+  # module's tasks in the accounts role that depends on sshd won't fail.
+  - openssh-server
   - accounts
-  # - ntpd
